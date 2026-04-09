@@ -65,7 +65,9 @@ pip install jimeng-ai-mcp
 
 #### Claude Desktop
 
-配置文件路径：`~/Library/Application Support/Claude/claude_desktop_config.json`
+配置文件路径：
+- **macOS**：`~/Library/Application Support/Claude/claude_desktop_config.json`
+- **Windows**：`%APPDATA%\Claude\claude_desktop_config.json`
 
 ```json
 {
@@ -254,7 +256,9 @@ pip install jimeng-ai-mcp
 
 ### Setup (Claude Desktop)
 
-Add to `~/Library/Application Support/Claude/claude_desktop_config.json`:
+Config file location:
+- **macOS**: `~/Library/Application Support/Claude/claude_desktop_config.json`
+- **Windows**: `%APPDATA%\Claude\claude_desktop_config.json`
 
 ```json
 {
