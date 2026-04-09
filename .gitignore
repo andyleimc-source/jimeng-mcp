@@ -1,0 +1,35 @@
+# 密钥 / 凭证
+.env
+.env.*
+!.env.example
+secrets*
+
+# 内部开发文档（不公开）
+HANDOFF.md
+api-doc/
+即梦*.md
+视频生成*.md
+数字人*.md
+动作模仿*.md
+视频翻译*.md
+计费说明*.md
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+dist/
+build/
+*.egg-info/
+*.egg
+
+# macOS
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
+*.swp
