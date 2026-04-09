@@ -47,7 +47,21 @@
 1. 登录[火山引擎控制台](https://console.volcengine.com/ai/ability/detail/2)，开通**即梦 AI** 服务
 2. 在[访问控制 → API 访问密钥](https://console.volcengine.com/iam/keymanage/)获取 Access Key ID 和 Secret Access Key
 
-### 第二步：配置 MCP 客户端
+### 第二步：安装
+
+推荐使用 `uvx`（无需手动安装，运行时自动拉取）：
+
+```bash
+uvx jimeng-ai-mcp
+```
+
+也可以用 pip 全局安装：
+
+```bash
+pip install jimeng-ai-mcp
+```
+
+### 第三步：配置 MCP 客户端
 
 #### Claude Desktop
 
@@ -58,7 +72,7 @@
   "mcpServers": {
     "jimeng": {
       "command": "uvx",
-      "args": ["jimeng-mcp"],
+      "args": ["jimeng-ai-mcp"],
       "env": {
         "JIMENG_ACCESS_KEY_ID": "填入你的 Access Key ID",
         "JIMENG_SECRET_ACCESS_KEY": "填入你的 Secret Access Key"
@@ -77,7 +91,7 @@
   "mcpServers": {
     "jimeng": {
       "command": "uvx",
-      "args": ["jimeng-mcp"],
+      "args": ["jimeng-ai-mcp"],
       "env": {
         "JIMENG_ACCESS_KEY_ID": "填入你的 Access Key ID",
         "JIMENG_SECRET_ACCESS_KEY": "填入你的 Secret Access Key"
@@ -224,6 +238,20 @@ uv run mcp dev src/jimeng_mcp/server.py
 1. Enable Jimeng AI in the [Volcengine Console](https://console.volcengine.com/ai/ability/detail/2)
 2. Get Access Key ID and Secret Access Key from [IAM Key Management](https://console.volcengine.com/iam/keymanage/)
 
+### Installation
+
+Recommended — run with `uvx` (no install needed):
+
+```bash
+uvx jimeng-ai-mcp
+```
+
+Or install with pip:
+
+```bash
+pip install jimeng-ai-mcp
+```
+
 ### Setup (Claude Desktop)
 
 Add to `~/Library/Application Support/Claude/claude_desktop_config.json`:
@@ -233,7 +261,7 @@ Add to `~/Library/Application Support/Claude/claude_desktop_config.json`:
   "mcpServers": {
     "jimeng": {
       "command": "uvx",
-      "args": ["jimeng-mcp"],
+      "args": ["jimeng-ai-mcp"],
       "env": {
         "JIMENG_ACCESS_KEY_ID": "your_access_key_id",
         "JIMENG_SECRET_ACCESS_KEY": "your_secret_access_key"

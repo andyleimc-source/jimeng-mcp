@@ -1,5 +1,5 @@
 [project]
-name = "jimeng-mcp"
+name = "jimeng-ai-mcp"
 version = "0.1.0"
 description = "MCP server for Jimeng AI (即梦) - Official Volcengine API"
 readme = "README.md"
